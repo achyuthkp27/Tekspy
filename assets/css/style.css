@@ -131,7 +131,7 @@ h6 {
 }
 
 #hero .hero-container {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   display: table-cell;
   margin: 0;
   padding: 0;
@@ -144,7 +144,6 @@ h6 {
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
-  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -155,14 +154,12 @@ h6 {
 }
 
 #hero h2 {
-  color: #ccc;
   margin-bottom: 50px;
 }
 
 #hero h2 span {
-  color: #fff;
   transition: 0.3s;
-  border-bottom: 2px solid #00a469;
+  border-bottom: 2px solid var(--color-primary);
 }
 
 @media (max-width: 768px) {
@@ -202,18 +199,19 @@ h6 {
 
 #hero .btn-get-started:hover {
   background: none;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 #hero .btn-services {
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 #hero .btn-services:hover {
-  background: #00a469;
-  border: 2px solid #00a469;
+  background: var(--color-primary);
+  color: #fff;
+  border: 2px solid var(--color-primary);
 }
 
 /*--------------------------------------------------------------
@@ -518,47 +516,37 @@ section {
 
 /* Get Started Section
 --------------------------------*/
-#about {
-  background: #fff;
-  padding: 80px 0;
+/*** About & Feature ***/
+.about-img,
+.feature-img {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
 }
 
-#about .about-img {
-  overflow: hidden;
+.about-img img,
+.feature-img img {
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
 }
 
-#about .about-img img {
-  max-width: 100%;
+.about-img img:last-child,
+.feature-img img:last-child {
+  margin: 20% 0 0 40%;
 }
 
-@media (max-width: 768px) {
-  #about .about-img {
-    height: auto;
-  }
-
-  #about .about-img img {
-    margin-left: 0;
-    padding-bottom: 30px;
-  }
-}
-
-#about .about-content {
-  background: #fff;
-}
-
-#about .about-title {
-  color: #333;
-  font-weight: 700;
-  font-size: 28px;
-}
-
-#about .about-text {
-  line-height: 26px;
-  margin-bottom: 15px;
-}
-
-#about .about-text:last-child {
-  margin-bottom: 0;
+.about-img::before,
+.feature-img::before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 80%;
+  top: 10%;
+  left: 20%;
+  border: 5px solid var(--color-primary);
+  z-index: -1;
 }
 
 /* Subscribe Section
@@ -1082,4 +1070,120 @@ section {
 
 .services .service-item:hover h3 {
   border-color: var(--color-secondary);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 60rem;
+  max-height: 33rem;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-content-left,
+.modal-content-right {
+  flex: 0 1 auto;
+}
+
+.modal-content-left {
+  flex: 2;
+}
+
+.modal-content-left img {
+  width: 40rem;
+  max-width: 95%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 2px;
+}
+
+.modal-content-right {
+  flex: 2;
+  max-width: 100%;
+  padding: 1rem 3rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close,
+.close-imp {
+  color: #aaa;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+  border-radius: 2px;
+  transition: 0.4s ease-out;
+}
+
+.close:hover,
+.close:focus,
+.close-imp:hover,
+.close-imp:focus {
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
 }
