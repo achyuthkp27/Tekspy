@@ -384,7 +384,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #111;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -1014,6 +1014,7 @@ section {
 --------------------------------------------------------------*/
 .services {
   padding: 60px 0;
+  background: #f6f6f6;
 }
 
 .services .service-item {
@@ -1052,7 +1053,7 @@ section {
 }
 
 .services .service-item h3 {
-  color: var(--color-primary);
+  color: var(--color-default);
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
@@ -1076,9 +1077,9 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: var(--color-primary);
 }
 
 .services .service-item:hover h3 {
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
 }
