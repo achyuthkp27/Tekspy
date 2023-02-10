@@ -234,7 +234,7 @@
   const modal = document.querySelector("#myModal");
 
   // Get the button that opens the modal
-  const btn = document.querySelectorAll(".btn");
+  const btn = document.querySelectorAll(".btn-client");
 
   // Get the <span> element that closes the modal
   const closeModal = document.getElementsByClassName("close")[0];
