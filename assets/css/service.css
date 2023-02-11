@@ -95,3 +95,102 @@
   font-size: 15px;
   color: #848484;
 }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 0 0 25px 0;
+  color: var(--color-primary);
+  font-size: 14px;
+  box-shadow: -8px -8px 12px 0 rgba(0, 164, 105, 0.3),
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+}
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+#footer .footer-top .footer-info img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: var(--color-secondary);
+}
+#footer .footer-top .social-links a {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #eee;
+  line-height: 1;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer-top .social-links a i {
+  line-height: 0;
+  font-size: 16px;
+}
+#footer .footer-top .social-links a:hover {
+  background: var(--color-secondary);
+  color: #fff;
+}
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--color-primary);
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-links ul i {
+  padding-right: 5px;
+  color: var(--color-primary);
+  font-size: 18px;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 5px 0;
+}
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+  color: var(--color-secondary);
+}
+#footer .footer-top .footer-links ul a:hover {
+  color: var(--color-primary);
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+  color: var(--color-secondary);
+}
