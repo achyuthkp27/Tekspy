@@ -590,10 +590,17 @@ section {
 
 /* Subscribe Section
 --------------------------------*/
-#subscribe {
-  background: var(--color-primary);
-  background-size: cover;
-  padding: 80px 0;
+#subscribe .container {
+  border-radius: 50px;
+  padding:  80px;
+  box-shadow: -8px -8px 12px 0 rgba(0, 164, 105, 0.3),
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 992px) {
+  #subscribe .container {
+    padding: 60px;
+  }
 }
 
 #subscribe .subscribe-title {
@@ -603,7 +610,7 @@ section {
 }
 
 #subscribe .subscribe-text {
-  color: var(--light);
+  color: var(--color-primary);
 }
 
 #subscribe .subscribe-btn-container {
@@ -1047,7 +1054,7 @@ section {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.85); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -1055,7 +1062,7 @@ section {
   margin: auto;
   padding: 0;
   width: 100%;
-  max-width: 90rem;
+  max-width: 70rem;
   max-height: 40rem;
   overflow: hidden;
   border-radius: 2px;
@@ -1115,7 +1122,7 @@ section {
 
 .modal-header .close {
   position: relative;
-  left: 35rem;
+  left: 25rem;
 }
 
 /*--------------------------------------------------------------
