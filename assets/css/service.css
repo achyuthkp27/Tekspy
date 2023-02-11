@@ -1,0 +1,97 @@
+:root {
+  --color-default: #2b180d;
+  --color-primary: #00a469;
+  --color-secondary: #1b2f45;
+  --light: #f8f8f8;
+  --dark: #252525;
+}
+
+/*--------------------------------------------------------------
+# about-ctn
+--------------------------------------------------------------*/
+.about-ctn .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+.about-ctn h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.about-ctn h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.about-ctn p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+
+.about-ctn .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: -8px -8px 12px 0 rgba(0, 164, 105, 0.3),
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.about-ctn .btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.about-ctn .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.about-ctn .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+
+/*--------------------------------------------------------------
+# features-ctn
+--------------------------------------------------------------*/
+.features-ctn .feature-box {
+  padding: 24px 20px;
+  box-shadow: -8px -8px 12px 0 rgba(0, 164, 105, 0.3),
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.features-ctn .feature-icons h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .features-ctn .feature-icons h3 {
+    font-size: 28px;
+  }
+}
+
+.features-ctn .feature-icons .content .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: var(--color-primary);
+}
+
+.features-ctn .feature-icons .content .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
