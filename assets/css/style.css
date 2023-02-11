@@ -45,6 +45,10 @@ a:focus {
   text-decoration: none;
 }
 
+.main {
+  overflow: hidden;
+}
+
 .make-bold {
   font-weight: 700;
 }
