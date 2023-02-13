@@ -6,6 +6,14 @@
   --dark: #252525;
 }
 
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # about-ctn
 --------------------------------------------------------------*/
@@ -93,7 +101,7 @@
 
 .features-ctn .feature-icons .content .icon-box p {
   font-size: 15px;
-  color: #848484;
+  font-family: var(--font-secondary);
 }
 
 /*--------------------------------------------------------------
