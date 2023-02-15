@@ -99,7 +99,6 @@
   color: var(--color-primary);
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -197,4 +196,153 @@
 #footer .footer-top .footer-contact p {
   line-height: 26px;
   color: var(--color-secondary);
+}
+
+/*--------------------------------------------------------------
+# Departments
+--------------------------------------------------------------*/
+.departments {
+  overflow: hidden;
+}
+
+.departments .nav-tabs {
+  border: 0;
+}
+
+.departments .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: var(--color-primary);
+  border-radius: 0;
+  border-right: 2px solid #ebf1f6;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.departments .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.departments .nav-link.active {
+  color: var(--color-secondary);
+  border-color: var(--color-primary);
+}
+
+.departments .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.departments .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.departments .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .departments .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .departments .nav-link.active {
+    color: #fff;
+    background: var(--color-secondary);
+  }
+}
+
+/*--------------------------------------------------------------
+# departments-ctn
+--------------------------------------------------------------*/
+.departments-ctn .nav-tabs {
+  border: 0;
+}
+
+.departments-ctn .nav-link {
+  border: 0;
+  padding: 20px;
+  color: #111;
+  border-radius: 0;
+  border-left: 5px solid #fff;
+  cursor: pointer;
+}
+
+.departments-ctn .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.departments-ctn .nav-link p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.departments-ctn .nav-link:hover h4 {
+  color: var(--color-primary);
+}
+
+.departments-ctn .nav-link.active {
+  background: #f7fcfc;
+  border-color: var(--color-primary);
+}
+
+.departments-ctn .nav-link.active h4 {
+  color: var(--color-primary);
+}
+
+.departments-ctn .tab-pane.active {
+  -webkit-animation: slide-down 0.5s ease-out;
+  animation: slide-down 0.5s ease-out;
+}
+
+.departments-ctn .tab-pane img {
+  float: left;
+  max-width: 400px;
+  padding: 0 15px 15px 0;
+}
+
+@media (max-width: 768px) {
+  .departments-ctn .tab-pane img {
+    float: none;
+    padding: 0 0 15px 0;
+    max-width: 100%;
+  }
+}
+
+.departments-ctn .tab-pane h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.departments-ctn .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
