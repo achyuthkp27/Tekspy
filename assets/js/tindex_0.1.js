@@ -28,7 +28,7 @@
     window.addEventListener("load", headerFixed),
       onscroll(document, headerFixed);
   }
-  
+
   let backtotop = select(".back-to-top");
   if (backtotop) {
     const toggleBacktotop = () => {
@@ -55,6 +55,9 @@
       !0
     );
   let preloader = select("#preloader");
+  document.getElementById("contact-us").innerHTML +=
+    '<section id="subscribe"> <div class="container" data-aos="fade-up"> <div class="row"> <div class="col-md-5"> <img src="assets/img/Services/contact-us.png" alt="" class="img-fluid"> </div> <div class="col-md-7 subscribe-btn-container"> <h3 class="subscribe-title">Contact Us For Updates</h3> <p class="subscribe-text">Contact Tekspy for more information on our background check services.</p> <a class="subscribe-btn" href="contact">Contact Us</a> </div> </div> </div> </section>';
+
   function aos_init() {
     AOS.init({ duration: 1e3, easing: "ease-in-out", once: !0, mirror: !1 });
   }
