@@ -28,9 +28,9 @@
     window.addEventListener("load", headerFixed),
       onscroll(document, headerFixed);
   }
-  modal = document.querySelector("#myModal");
-  btn = document.querySelectorAll(".btn-client");
-  closeModal = document.getElementsByClassName("close")[0];
+  const modal = document.querySelector("#myModal");
+  const btn = document.querySelectorAll(".btn-client");
+  const closeModal = document.getElementsByClassName("close")[0];
   for (let i = 0; i < btn.length; i++)
     btn[i].addEventListener("click", function () {
       modal.style.display = "block";
