@@ -29,7 +29,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="https://cdn.jsdelivr.net/gh/achyuthkp27/Tekspy/assets/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/achyuthkp27/Tekspy/assets/css/style_0.1.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/achyuthkp27/Tekspy/assets/css/mservice.css" rel="stylesheet">
 
 </head>
@@ -590,7 +590,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="javascript:void(0);" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -613,14 +613,13 @@
                   placeholder="Your Company Name" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="7" placeholder="Message" id="message"
+                  required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="sendMail()">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -728,11 +727,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
     integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/gh/achyuthkp27/Tekspy/assets/js/validate.js"></script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("MXQanEP15f1V6fgc5");
+    })();
+  </script>
   <!-- Template Main JS File -->
   <script src="https://cdn.jsdelivr.net/gh/achyuthkp27/Tekspy/assets/js/tindex_0.3.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/achyuthkp27/Tekspy/assets/js/modal.js"></script>
+  <script src="assets/js/EmailJs.js"></script>
 
 </body>
 
